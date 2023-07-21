@@ -1,54 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Penser à changer la langue -->
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TP2 HTML</title>
-    <link rel="shortcut icon" href="img/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <!-- La balise title supporte jusqu'a 70 caractère -->
+    <title>Projet Helium</title>
+    <meta
+      name="description"
+      content="Tout savoir sur le modem ultra rapide Helium qui va revolutionner l'internet 3.0"
+    />
+
+    <!-- open graph sert à etre plus visible sur les resaux -->
+    <meta property="og:title" content="Helium" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta
+      name="og:description"
+      content="Tout savoir sur le modem ultra rapide Helium qui va revolutionner l'internet 3.0"
+    />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
-        <h2>Helium</h2>
-        <ul>
-            <li>5G</li>
-            <li>Explorer</li>
-            <li>Ecosystem</li>
-        </ul>
+      <h2>Helium</h2>
+      <ul>
+        <li>5G</li>
+        <li>Explorer</li>
+        <li>Ecosystem</li>
+      </ul>
     </nav>
     <header>
-        <div class="header-left">
-            <div class="header-left-conteneur">
-                <h1>People-Powered Networks</h1>
-                <h3>Start a Wireless Revolution</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id minima omnis quaerat illo temporibus vitae quo optio recusandae ipsa!</p>
-            </div>
+      <div class="header-left">
+        <div class="header-left-conteneur">
+          <!-- Le h1 doit etre le plus haut possible et dire de quoi on parle -->
+          <h1>People-Powered Networks</h1>
+          <h2>Start a Wireless Revolution</h2>
+          <!-- Le "p" aide le robot à comprendre le contenu -->
+          <!-- Et mettre des balises stong et em pour plus d'efficacité -->
+          <p>
+            Lorem ipsum dolor sit amet
+            <strong>consectetur adipisicing</strong> elit. Necessitatibus id
+            minima omnis quaerat illo <em>temporibus vitae quo</em> optio recusandae
+            ipsa!
+          </p>
         </div>
-        <div class="header-right">
-            <img src="img/main.png" alt="">
-        </div>
+      </div>
+      <div class="header-right">
+        <img src="img/main.png" alt="" />
+      </div>
     </header>
     <section class="infos">
-        <div class="infos-left">
-            <h3>Core Technologies</h3>
-            <div class="infos-left-content">
-                <button>Tokens</button>
-                <button>Proof of Coverage</button>
-                <button>LongF1</button>
-            </div>
+      <div class="infos-left">
+        <h3>Core Technologies</h3>
+        <div class="infos-left-content">
+          <button>Tokens</button>
+          <button>Proof of Coverage</button>
+          <button>LongF1</button>
         </div>
-        <div class="infos-right">
-            <h3>Our Investors</h3>
-            <div class="investors">
-                <div class="img-container">
-                    <img src="img/investlogo2blue.png" alt="investor-1">
-                    <img src="img/investlogo3blue.png" alt="investor-2">
-                    <img src="img/investlogo4blue.png" alt="investor-3">
-                </div>
-            </div>
+      </div>
+      <div class="infos-right">
+        <h3>Our Investors</h3>
+        <div class="investors">
+          <div class="img-container">
+            <img src="img/investlogo2blue.png" alt="investor-1" />
+            <img src="img/investlogo3blue.png" alt="investor-2" />
+            <img src="img/investlogo4blue.png" alt="investor-3" />
+          </div>
         </div>
+      </div>
     </section>
-
   </body>
 </html>
