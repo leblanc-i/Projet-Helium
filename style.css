@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 5px;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: rgb(31,31,31);
+    color: #ffff; 
+    min-height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+nav h2, li {
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.header-left {
+    width: 50%;
+}
+.header-left-conteneur {
+    width: 100%;
+}
+.header-left-conteneur h3 {
+    color: rgb(89,86,247);
+    font-size: 1.5rem;
+}
+.header-right {
+    width: 50%;
+}
+.header-right img {
+    width: 100%;
+}
+.infos {
+    display: flex;
+    background: black;
+    border-radius: 10px;
+}
+.infos-left {
+    width: 35%;
+}
+.infos-left-content {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+.infos-left-content button {
+    margin: 3px 10px;
+    padding: 5px;
+    width: 130px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(70,75,253);
+    color: #ffff;
+    cursor: pointer;
+}
+.infos-right {
+    width: 65%;
+}
+.investors {
+    margin-top: 30px;
+}
+.img-container {
+    display: flex;
+    justify-content: space-around;
+}
+.img-container img {
+    width: 80px;
+}
+h1{
+    font-size: 5rem;
+}
+p {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:950px){
+    h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:687px){
+    h1 {
+        font-size: 3rem;
+    }
+    .header-left-conteneur h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:540px) {
+    header {
+        display: block;
+    }
+    .header-left {
+        width: 100%;
+        text-align: left;
+    }
+    p{
+        text-align: justify;
+    }
+    .header-right {
+        width: 100%;
+    }
+    .infos {
+        display: block;
+        text-align: center;
+    }
+    .infos-left {
+        width: 100%;
+    }
+    .infos-left-content {
+        margin: 0 auto;
+    }
+    .infos-right {
+        width: 100%;
+    }
+    .img-container img {
+        width: 50px;
+    }
+}
+@media screen and (max-width:390px) {
+    nav ul{
+        width: 70%;
+    }
+    nav li {
+        font-size: 80%;
+    }
+}
